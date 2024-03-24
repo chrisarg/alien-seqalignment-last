@@ -2,6 +2,10 @@
 
 Alien::SeqAlignment::edlib - find, build and install the last tools
 
+# VERSION
+
+version 0.02
+
 # SYNOPSIS
 
 To execute the last set of tools, you can use the following code:
@@ -12,7 +16,7 @@ To execute the last set of tools, you can use the following code:
 
 Now you can run the last tools as:
 
-    system Alien::SeqAlignment::last->exe (options);    
+    system Alien::SeqAlignment::last->lastal (options);    
     system Alien::SeqAlignment::last->lastdb (options); 
     system Alien::SeqAlignment::last->maf_convert (options); 
     system Alien::SeqAlignment::last->train (options); 
@@ -34,9 +38,9 @@ re-attempt installation of this Alien.
 
 # METHODS
 
-## exe
+## lastal
 
-    Alien::SeqAlignment::last->exe
+    Alien::SeqAlignment::last->lastal
 
 Returns the command name for running the CLI version of the last aligner.
 The latter finds local alignments between query sequences, and
@@ -135,6 +139,11 @@ read.
 - [Alien::Build::Manual::AlienUser](https://metacpan.org/dist/Alien-Build/view/lib/Alien/Build/Manual/AlienUser.pod)
 
     Detailed manual for users of Alien classes.
+
+- [Bio::SeqAlignment](https://metacpan.org/pod/Bio::SeqAlignment)
+
+    A collection of tools and libraries for aligning biological sequences 
+    from within Perl. 
 
 # AUTHOR
 
